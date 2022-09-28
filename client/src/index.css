@@ -1,0 +1,29 @@
+@media screen and (max-width: 500px) {
+    /* *{
+        background-color: red;
+    } */
+    .avatar{
+        height: 100px !important;
+        width: 75px !important;
+    }
+}
+
+
+@media screen and (max-width: 768px ) {
+    .menuList{
+        width: 25vw !important;
+    }
+}
+
+@media screen and (max-width: 558px ) {
+    .menuList{
+        /* display: none !important; */
+        width: 40vw !important;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    .adminHome{
+        flex-direction: column !important;
+    }
+}

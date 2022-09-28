@@ -25,11 +25,11 @@ const Result = () => {
   
   return (
     
-    <div className='container'>
+    <div className='container overflow-scroll' style={{ minHeight:"84vh"}}>
     <p style={{fontSize:"21px", fontWeight:"bold"}}>Your Score</p>
     {data.length !== 0 ? 
     <div>
-      <table className="table">
+      <table className="table table-hover">
         <thead>
           <tr>
             <th scope="col">Exam</th>

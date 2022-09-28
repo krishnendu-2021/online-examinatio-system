@@ -22,7 +22,7 @@ const Viewresult = () => {
   }, [])
   
   return (
-    <div className='container'>
+    <div className='container overflow-scroll'>
     <p style={{fontSize:"21px", fontWeight:"bold"}}> Score</p>
     <div>
       <table className="table">

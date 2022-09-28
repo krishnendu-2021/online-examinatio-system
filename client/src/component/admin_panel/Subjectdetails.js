@@ -24,7 +24,7 @@ const Subjectdetails = () => {
   }
   
   return (
-    <div className='container'>
+    <div className='container overflow-scroll' style={{ minHeight:"84vh"}}>
     <p style={{fontSize:"21px", fontWeight:"bold"}}>Exam Details</p>
     <div>
       <table className="table">

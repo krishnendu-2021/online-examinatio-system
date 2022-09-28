@@ -19,7 +19,7 @@ const Admresults = () => {
   
 
   return (
-    <div className='container'>
+    <div className='container overflow-scroll'>
     <p style={{fontSize:"21px", fontWeight:"bold"}}>Result List</p>
     <div>
       <table className="table">

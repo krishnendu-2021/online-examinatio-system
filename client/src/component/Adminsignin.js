@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./form.css"
 
 const Signin = () => {
 
@@ -43,10 +44,10 @@ const Signin = () => {
   };
 
   return (
-    <div className="container" style={{ minHeight: "84vh" }}>
+    <div className="container formContainer" style={{ minHeight: "84vh" }}>
       <div
         className="container my-3 "
-        style={{ width: "50%", border: "2px solid black", padding: "12px" }}
+        style={{  border: "2px solid black", padding: "25px" }}
       >
         <div
           className="text-center"
@@ -56,7 +57,7 @@ const Signin = () => {
         </div>
         <form
           className="needs-validation"
-          style={{ width: "50%", margin: "auto auto" }}
+          style={{  margin: "auto auto" }}
         >
           <div className="mb-3">
             <label htmlFor="email" className="form-label">

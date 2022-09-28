@@ -38,7 +38,7 @@ const Admquestion = () => {
   }
   
   return (
-    <div className='container'>
+    <div className='container overflow-scroll'>
     <p style={{fontSize:"21px", fontWeight:"bold"}}>Question List</p>
     <div>
       <table className="table">
@@ -63,7 +63,7 @@ const Admquestion = () => {
               <td>{ele.three}</td>
               <td>{ele.four}</td>
               <td>{ele.ans}</td>
-              <td><button className='btn btn-dark mx-2 my-2' onClick={toggleclick(i)} > Edit</button>
+              <td><button className='btn btn-dark mx-2 my-1' onClick={toggleclick(i)} > Edit</button>
               <button className='btn btn-dark' onClick={async function(){
                 console.log(ele.i)
                 setclick(true);

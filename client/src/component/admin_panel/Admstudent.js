@@ -22,7 +22,7 @@ const Admstudent = () => {
 
   return (
    
-       <div className='container'>
+       <div className='container overflow-scroll'>
       <p style={{fontSize:"21px", fontWeight:"bold"}}>Subject List</p>
       <div>
         <table className="table">

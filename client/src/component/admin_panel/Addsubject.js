@@ -37,7 +37,7 @@ const handleSubmit =async(e)=>{
 }
   return (
     <>
-    <div className="container my-4">
+    <div className="container my-4 " >
         <label htmlFor="id" className="form-label">Subject code</label>
         <input type="text" className="form-control" id="id" name='id' onChange={onchange} value={state.id} placeholder="enter subject id"/>
     </div>

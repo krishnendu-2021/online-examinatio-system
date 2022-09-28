@@ -32,7 +32,7 @@ useEffect(() => {
 }, [toggle1,click])
 
   return (
-    <div className='container'>
+    <div className='container overflow-scroll'>
     <p style={{fontSize:"21px", fontWeight:"bold"}}>Exam List</p>
     <div>
       <table className="table">
@@ -53,10 +53,15 @@ useEffect(() => {
             <td>{ele.date}</td>
             <td>{ele.level}</td>
             <td> 
-              <Link to={`/admin/exam/details/${ele.id} `}><button className="btn btn-dark " >Details</button></Link>
-              <Link to= {`/admin/exam/viewquestions/${ele.id}`}><button className="btn btn-dark mx-2">View Questions</button></Link>
-              <Link to={`/admin/exam/addquestion/${ele.id}`}><button className="btn btn-dark ">Add Questions</button></Link>
-              <button className="btn btn-dark mx-2" 
+            <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Select
+            </button>
+            <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton1">
+            <li> <Link to={`/admin/exam/details/${ele.id} `}><button className="btn btn-dark " >Details</button></Link></li>
+             <li> <Link to= {`/admin/exam/viewquestions/${ele.id}`}><button className="btn btn-dark my-1">View Questions</button></Link></li>
+             <li> <Link to={`/admin/exam/addquestion/${ele.id}`}><button className="btn btn-dark ">Add Questions</button></Link></li>
+             <li> <button className="btn btn-dark my-1" 
                 onClick={async function(){
                   // console.log(ele.id)
                   setclick(true);
@@ -73,7 +78,9 @@ useEffect(() => {
                         "Content-Type": "application/json",
                       }
                     })
-                }}>Delete</button>
+                }}>Delete</button></li>
+                </ul>
+                </div>
             </td>
           </tr>
           })}

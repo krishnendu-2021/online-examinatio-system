@@ -35,19 +35,19 @@ const Admhome = () => {
     
     <div className='mx-2 d-flex flex-column my-5' >
     <p style={{fontSize:"21px", fontWeight:"bold", textAlign:"center"}}>Dashboard</p>
-    <div className='mx-2 d-flex'>
-        <div className="card mx-2"  style={{width: "18rem"}}>
+    <div className='mx-2 d-flex adminHome'>
+        <div className="card mx-2 my-1" >
         <div className="card-body">
             <h5 className="card-title">Number of exams - {exam}</h5>
-            <Divider style={{backgroundColor: "black", width:'100%'}} className="my-2"/>
+            <Divider style={{backgroundColor: "black"}} className="my-2"/>
             <Link to="/admin/exam" className="btn btn-dark">View Exams</Link>
         </div>
         </div>
        
-        <div className="card mx-2" style={{width: "18rem" }}>
+        <div className="card mx-2 my-1" >
         <div className="card-body">
-            <h5 className="card-title">Number of users - {user}</h5>
-            <Divider style={{backgroundColor: "black", width:'100%'}} className="my-2"/>
+            <h5 className="card-title ">Number of users - {user}</h5>
+            <Divider style={{backgroundColor: "black"}} className="my-2"/>
             <Link to="/admin/list" className="btn btn-dark">View users</Link>
         </div>
         </div>       

@@ -33,7 +33,7 @@ const Admsubject = () => {
 
   // console.log(subject)
   return (
-    <div className='container '>
+    <div className='container overflow-scroll'>
       <p style={{fontSize:"21px", fontWeight:"bold"}}>Subject List</p>
       {subdata.length !==0 ?
       <div>

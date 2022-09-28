@@ -30,10 +30,10 @@ const Shome = () => {
         <div className="row">
         {exam.map((ele , i)=>{
          return (  <div className='col-md-4 my-2 ' key={i}>
-            <div className="card mx-2"  style={{width: "18rem"}}>
+            <div className="card mx-2">
             <div className="card-body">
                 <h5 className="card-title text-center">{ele.name}</h5>
-                <Divider style={{backgroundColor: "black", width:'100%'}} className="my-2"/>
+                <Divider style={{backgroundColor: "black"}} className="my-2"/>
                 <div className="text-center">
                     <Link to={`/student/exam/${ele.name}/${ele.id}`}><button className="btn btn-dark text-center">Start exam</button></Link>
                 </div>

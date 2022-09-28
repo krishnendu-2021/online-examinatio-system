@@ -1,6 +1,7 @@
 import { Divider } from '@mui/material'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import "./form.css"
 
 const Signup = () => {
   const navigate = useNavigate('')
@@ -47,9 +48,9 @@ const Signup = () => {
   return (
     <div className="container" style={{minHeight:"84vh"}}>
       
-    <div className='container my-3 ' style={{width:"50%", border:"2px solid black",padding:"12px"}}>
+    <div className='container my-3 formContainer' style={{ border:"2px solid black",padding:"25px"}}>
       <div className="text-center" style={{fontWeight:"bold",fontSize:"20px"}}>Signup</div>
-        <form className="needs-validation" style={{width:"50%", margin:"auto auto"}} >
+        <form className="needs-validation" style={{ margin:"auto auto"}} >
         <div className="mb-3">
     <label htmlFor="fname" className="form-label">First name</label>
     <input type="text" className="form-control" id="fname" name='fname' value={credentials.fname} onChange={onchange}  required/>
