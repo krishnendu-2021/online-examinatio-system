@@ -34,7 +34,7 @@ const Editquestion = ({settoggle,toggleclick,setaddClick,questions,value,id}) =>
     }
 
   return (
-    <div className='container'>
+    <div className='container' style={{marginLeft:"19px"}}>
     <p style={{fontSize:"21px", fontWeight:"bold"}}>Edit Questions</p>
     <div className="container my-4">
 

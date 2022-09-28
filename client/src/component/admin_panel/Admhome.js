@@ -33,7 +33,7 @@ const Admhome = () => {
   return (
     <>
     
-    <div className='mx-2 d-flex flex-column my-5' >
+    <div className='mx-2 d-flex flex-column my-5' style={{marginLeft:"19px"}}>
     <p style={{fontSize:"21px", fontWeight:"bold", textAlign:"center"}}>Dashboard</p>
     <div className='mx-2 d-flex adminHome'>
         <div className="card mx-2 my-1" >

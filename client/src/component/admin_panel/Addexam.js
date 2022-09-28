@@ -49,7 +49,7 @@ const Addexam = ({setToggle , toggleExam ,settoggle1}) => {
 
   return (
     <>
-    <div className="container my-4">
+    <div className="container my-4" style={{marginLeft:"19px"}}>
         <label htmlFor="id" className="form-label">Exam id</label>
         <input type="text" className="form-control" name='id' id="id" onChange={onchange} value={value.id} placeholder="enter exam"/>
     </div>

@@ -27,3 +27,42 @@
         flex-direction: column !important;
     }
 }
+
+
+.ham{
+    position: absolute;
+    left: 4px;
+    
+}
+
+.cross{
+    position: absolute; 
+    right: 0px;
+    top: 4px;
+
+}
+
+.hidemenu{
+    display: none !important;
+}
+
+.showMenu{
+    display: block !important;
+}
+@media screen and (max-width : 482px) {
+    .resHide{
+        display: none !important;
+    }
+}
+
+@media screen and (min-width : 483px) {
+    .ham{
+        display: none !important;
+    }
+    .menuList{
+        display: block !important;
+    }
+    .cross{
+        display: none !important;
+    }
+}

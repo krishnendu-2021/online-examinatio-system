@@ -57,7 +57,7 @@ const Addquestion = () => {
     }
 
   return (
-    <div className='container'>
+    <div className='container' style={{marginLeft:"19px"}}>
     <p style={{fontSize:"21px", fontWeight:"bold"}}>Add Questions</p>
     <div className="container my-4">
       <label htmlFor="que" className="form-label">Question</label>

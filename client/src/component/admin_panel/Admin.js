@@ -1,8 +1,10 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Avatar from '@mui/material/Avatar';
 import { deepOrange } from '@mui/material/colors';
 import { Divider } from '@mui/material'
 import {Link, Outlet, useNavigate} from 'react-router-dom'
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
 const Admin = () => {
   const navigate = useNavigate("")
@@ -10,10 +12,32 @@ const Admin = () => {
     sessionStorage.removeItem("admin");
     navigate("/")
   }
+  const show =()=>{
+    
+    // console.log("clicked")
+    const menuList = document.querySelector(".menuList")
+
+    menuList.classList.remove("resHide")
+    menuList.classList.remove("hidemenu")
+    menuList.classList.add("showMenu")
+  }
+
+  const hide =()=>{
+    // console.log("clicked")
+    const menuList = document.querySelector(".menuList")
+    menuList.classList.remove("showMenu")
+    menuList.classList.add("hidemenu")
+    menuList.classList.add("resHide")
+  }
+  useEffect(() => {
+    const menuList = document.querySelector(".menuList")
+    menuList.classList.add("resHide")
+  }, [])
   return (
     <div className="main" style={{display:"flex", minHeight:"84vh"}}>
-
-        <div className='d-flex flex-column text-center menuList' style={{width:"20vw", padding:"25px", backgroundColor:'black', color:"white"}}>
+            <MenuRoundedIcon className='ham' onClick={show}/>
+         <div className='d-flex flex-column text-center menuList' style={{width:"20vw",position:"relative", padding:"25px", backgroundColor:'black', color:"white"}}>
+         <CloseRoundedIcon className="cross" onClick={hide}/>
         <div className='my-3 d-flex justify-content-center '>
         <Avatar className='avatar' sx={{ bgcolor: deepOrange[500] }} style={{height:"120px" , width:"100px"}}/>
         </div>
